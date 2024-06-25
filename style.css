@@ -1,0 +1,234 @@
+/*Font import: nav + h2*/
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+/*Font import: title*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*Page I*/
+
+body{
+  margin: 0;
+}
+/*Nav-bar*/
+nav{
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  text-align:center;
+  height: 40px;
+  align-content: center;
+  background-color: #e8e3e3;
+  overflow: hidden;
+  z-index: 2;
+}
+/*Nav-bar font*/
+nav a{
+  font-family: 'Oswald', sans-serif;
+  font-weight:500;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:#860c4be3;
+  margin:0 15px;
+  font-size:16px;
+  letter-spacing:1px;
+  position:relative;
+  display:inline-flex;
+}
+/*Nav-bar efect*/
+nav a:hover{
+  text-decoration: line-through #860c4b 5px;
+}
+nav a:focus{
+  color: #000000;
+}
+main{
+  margin-top: 40px;
+}
+h2{
+  font-family: 'oswald', sans-serif !important;
+  font-weight:500;
+  color: #860c4b;
+  text-decoration: underline;
+}
+h3{
+  font-family: 'oswald', sans-serif !important;
+  font-weight:500;
+  color: #467785;
+  text-align: center;
+}
+.container-video {
+  height: 450px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.container-video video{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
+.container-video .title{
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  color: #860c4b;
+  max-width: 40%;
+  margin-left: 30%;
+}
+.container-video .title h1{
+  font-family: 'amatic sc', cursive!important;
+  font-weight: 500;
+}
+.peruinicialI{
+  width: 100%;
+  height: 300px;
+  position: relative;
+  object-fit: cover;
+  display: flex;
+}
+.container-content{
+  margin: 5%;
+  text-align: justify;
+}
+footer{
+  text-align: center;
+  color:#860c4b;
+  bottom: 0px;
+  height: 50px;
+}
+/*Page II and II*/
+/*Size photos*/
+.photospageII{
+  width: 100%;
+  height: 300px;
+  position: relative;
+  object-fit: cover;
+}
+.photospageIII{
+  width: 100%;
+  height: 300px;
+  position: relative;
+  object-fit: cover; 
+  row-gap: 20px;
+}
+.gridpageIII img{
+  width: 100%
+}
+.linkspageII{
+  color: #467785;
+  text-decoration: none;
+  font-size: 20px;
+}
+ol{
+  text-align: center;
+  background-color: #add8e68f;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0;
+  height: 40px;
+  align-content: center;
+  border: 3px solid #467785;
+  border-radius: 5px;
+}
+li{
+  list-style: none;
+  display: inline;
+  text-transform: uppercase;
+  letter-spacing:1px;
+  margin: 0 15px;
+}
+li a{
+  color: #467785;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: 'oswald', sans-serif !important;
+  font-weight: 500;
+}
+.container-video img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
+/*BOTTON GO TO TOP*/
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #860c4b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'oswald', sans-serif !important;
+  font-weight:500;
+  display: none;
+  z-index: 99;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+/*RESPONSIVE - TABLET*/
+@media only screen and (min-width: 481px) and (max-width: 772px){
+ .gridpageIII{ 
+  display: grid;
+  grid-template-columns: 49% 49%;
+  align-items: center;
+  row-gap: 2%;
+  column-gap: 2%;
+ }
+ .gridpageIII img:nth-child(5n){
+  grid-column: 1 / span 2;  
+}
+}
+/*RESPONSIVE - PHONE*/
+@media only screen and (min-width:0px) and (max-width: 480px){
+.menupageII{
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0;
+  height: 40px;
+  align-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.gridpageIII{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    row-gap: 10px;
+ }
+ li{
+  list-style: none;
+  display: inline;
+  text-transform: uppercase;
+  letter-spacing:1px;
+  margin: 0 10px;
+}
+}
+/*ACCESSIBILITY*/
+@media (prefers-reduced-motion: reduce) {
+ button {
+      animation: none;
+  }
+}
+@media (prefers-color-scheme: light) {
+  main {
+    background-color: rgb(39, 38, 38);
+    color: rgb(252, 252, 252);
+    outline: 5px solid#000;
+  }
+  nav {
+    background-color: rgb(0, 0, 0);
+  }
+  .menupageII{
+    background-color: rgb(0, 0, 0);
+  }
+}

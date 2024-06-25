@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peru travel</title>
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="lightbox.css">
+  <script src = "javascript-lightbov.js"></script>
+  <script src = "javascript.js"></script>
+  <script src="lightbox-plus-jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+      <nav>
+            <a href="index.html">History</a>
+            <a href="index II.html">Tourism</a>
+            <a href="index III.html">Gastronomy</a>
+      </nav>
+  </header>
+  <main>
+    <div class="container-video">
+        <video autoplay muted loop id="myVideo">
+          <source src="https://cdn.pixabay.com/video/2017/08/30/11675-231758839_large.mp4" type="video/mp4">
+        </video> 
+    </div>
+    <div class="container-content">
+    <h2>GASTRONOMY</h2>
+    <p>Considered the Gastronomic Capital of the Americas, in Lima everything centers on food. And that is more than apparent in its excellent restaurants, bars and taverns, where thousands of years of flavors are fused using ingredients from the coast, highlands and rainforest. If you are a lover of fine food, then this will be an experience you’ll want to repeat again and again.</p>
+    <p>While in Lima, it would be impossible not to try cebiche or a good pisco sour; eat Chinese food or savor the delicious kebabs known as “anticuchos”; visit the Central, Maido or Astrid & Gaston restaurants, considered among the world’s best according to The World’s 50 Best Restaurants… A fascinating tour through aromas, textures and endless surprises that will leave your mouth watering.</p>
+    <p>Try it all for yourself… </p>
+      <div class="gridpageIII">
+        <a href=img/frutainicial.jpg data-lightbox="example-set" data-title="Photo1"> 
+          <img src="img/frutainicial.jpg" alt="Fruits" class="photospageIII" onmouseover = "upDate(this)" onmouseout = "unDo()">
+        </a>
+        <a href=img/ceviche.jpg data-lightbox="example-set" data-title="Photo2"> 
+          <img src="img/ceviche.jpg" alt="Ceviche" class="photospageIII" onmouseover = "upDate(this)" onmouseout = "unDo()">
+        </a>
+        <a href=img/pollo.jpg data-lightbox="example-set" data-title="Photo3"> 
+          <img src="img/pollo.jpg" alt="Chiken" class="photospageIII" onmouseover = "upDate(this)" onmouseout = "unDo()">
+        </a>
+        <a href=img/cevicheII.jpg data-lightbox="example-set" data-title="Photo4"> 
+          <img src="img/cevicheII.jpg" alt="Ceviche two" class="photospageIII" onmouseover = "upDate(this)" onmouseout = "unDo()">
+        </a>
+        <a href=img/sopa.jpg data-lightbox="example-set" data-title="Photo5"> 
+          <img src="img/sopa.jpg" alt="Soop" class="photospageIII" onmouseover = "upDate(this)" onmouseout = "unDo()">
+        </a>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">GO TOP</button>
+    <footer>
+      <p>&copy;Danika Dimova 2024<p>
+    </footer>
+  </main>
+</body>
+</html>
